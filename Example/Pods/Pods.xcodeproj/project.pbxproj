@@ -1,0 +1,1192 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0414D3D59847BB14B55B9CF0 /* EGMGraphLinesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D480DEB445B0B875A200A038 /* EGMGraphLinesManager.m */; };
+		0810C964AB1C922F24AB99CD /* EGMDataPointsLineModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A31EB8999B7B22E99A4DB7 /* EGMDataPointsLineModel.h */; };
+		082FB569541CAAC603E6A08B /* EGMGraphLabelRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 01124F9C0F2C92E72A4783C3 /* EGMGraphLabelRenderer.h */; };
+		087A54BE26B2FEB4085F7BD7 /* Pods-Tests-Charts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E460B024850D350A0D4795A /* Pods-Tests-Charts-dummy.m */; };
+		099FDE40C15C7E2F2DEF0DD7 /* EGMGraphDataPointTargetingRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62512E9C9775D67A362F01E2 /* EGMGraphDataPointTargetingRenderer.m */; };
+		0A8EC98372DA5C6E77D882D5 /* EGMGraphAxisValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C6D4787B4096F8A9C6596 /* EGMGraphAxisValue.m */; };
+		0B910678E555BF40649F6D06 /* EGMDataPointsLineModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A31EB8999B7B22E99A4DB7 /* EGMDataPointsLineModel.h */; };
+		0BB16DF4D6786BEAEA7E4164 /* EGMGraphDataPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B5EB1477C11127C21C9897 /* EGMGraphDataPoint.h */; };
+		0F9D3A854C4DBCD01E587AB5 /* EGMGraphDataPointsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8549D10C4A95BED581CFF /* EGMGraphDataPointsManager.h */; };
+		0FA1C4C653E632B5EBF60AF7 /* EGMGraphDataPointTargetingRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62512E9C9775D67A362F01E2 /* EGMGraphDataPointTargetingRenderer.m */; };
+		124FA6AFB5D9D36216C1F08E /* EGMGraphAxisValueDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E08B6AD1A88E69882DD0D7 /* EGMGraphAxisValueDate.m */; };
+		13D085F0A3E133D57F1A0A83 /* EGMGraphDataPointRectRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BE1DDEC550B801D965233 /* EGMGraphDataPointRectRenderer.m */; };
+		1518670D259696EF02F28965 /* EGMGraphDataPointBarRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DECB33E9B6DCF2E55581B6C /* EGMGraphDataPointBarRenderer.m */; };
+		158CF359400115BA6B4C42A6 /* EGMGraphDataPointBarRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F314BCA8A2E2582D024984DE /* EGMGraphDataPointBarRenderer.h */; };
+		16091DE8345CC21D39EB4444 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD3CB4DBDD53434EF36AC2D /* Foundation.framework */; };
+		16DDCFA7A6A8E40E4B6D136C /* EGMGraphLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8001264E0FB868C80C51D0A7 /* EGMGraphLabelManager.m */; };
+		18E41E9BE1831201DC071812 /* EGMGraphGuidelineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA85EF3B0151025A1FF1CC0 /* EGMGraphGuidelineManager.m */; };
+		1977610A7342BB30E464ADD2 /* EGMGraphItemsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7958E7193296791B7D9D3CF1 /* EGMGraphItemsManager.h */; };
+		1F2682B5D6A294B6BA7FEFE0 /* EGMGraphDataPointTargetingRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E40C55E43FC2A4EF91EF13B /* EGMGraphDataPointTargetingRenderer.h */; };
+		1F5D86054937F1EDE03E5763 /* EGMGraphDataPointLineRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = ECDF7418ABB05AA3C9DB8165 /* EGMGraphDataPointLineRenderer.h */; };
+		240449C950289B310F84CB8A /* EGMGraphUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD75AAEA14EEB89D2DD76F6 /* EGMGraphUtils.h */; };
+		2662D30300B8002B28932064 /* EGMGraphDataPointRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 919DE25E2F5C1ECB4F9CF731 /* EGMGraphDataPointRenderer.h */; };
+		285ED024D8E8FD1E3448E453 /* Pods-Charts-Charts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59B99DED2D9D7C9C0601B0 /* Pods-Charts-Charts-dummy.m */; };
+		2A0FB938C504D9B335816879 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD3CB4DBDD53434EF36AC2D /* Foundation.framework */; };
+		2DF1C757B1BF8CA75A62EE73 /* EGMGraphDataPointLineRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = ECDF7418ABB05AA3C9DB8165 /* EGMGraphDataPointLineRenderer.h */; };
+		2EDB5F3856B912F589F2ACCF /* EGMGraphItemRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D974F80868D611FA85EC18 /* EGMGraphItemRenderer.h */; };
+		3273689A0307028247D9183F /* EGMGraphAxisLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AED8EC1BDF959CA2708E0 /* EGMGraphAxisLabel.m */; };
+		361E458463027FAEAF2CD52A /* EGMGraphUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD75AAEA14EEB89D2DD76F6 /* EGMGraphUtils.h */; };
+		371C8A4F8F0E16ED21436E69 /* EGMDataPointSectionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF877BF8EB7EF00FFD4488C1 /* EGMDataPointSectionContainer.m */; };
+		393AF77B74892261A94EA639 /* EGMGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 706BDA9C33059F72A3A83DE2 /* EGMGraphView.h */; };
+		393E05257501F4B487C5347C /* EGMGraphAxisValueDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E08B6AD1A88E69882DD0D7 /* EGMGraphAxisValueDate.m */; };
+		3987332E809DE430E6D4313D /* EGMGraphDataPointsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E67F72191968B809C2C6D8E /* EGMGraphDataPointsManager.m */; };
+		3BC47345826FFC7E69B9E078 /* EGMGraphItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554A86A28C8B5A388D54CEB /* EGMGraphItemsManager.m */; };
+		3EF27B89EE365081952BEEB0 /* EGMGraphUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB15064A9FA9D9C3177182D2 /* EGMGraphUtils.m */; };
+		4090ACA450080D797DADB4ED /* EGMDataPointSectionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B51D0ED8D90496727D77734 /* EGMDataPointSectionContainer.h */; };
+		499957E1889A09A41456508B /* EGMGraphGuidelineManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B85C5736360D379FDB03F0 /* EGMGraphGuidelineManager.h */; };
+		4AAF162AAAAFEE168F3CD3D0 /* EGMGraphDataPointRectTextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784090BCD4FD3FAF6DD2A97 /* EGMGraphDataPointRectTextRenderer.m */; };
+		4E146040C436769316860F05 /* EGMGraphLinesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D480DEB445B0B875A200A038 /* EGMGraphLinesManager.m */; };
+		50AE18F6086CF0C8DF0B5B59 /* EGMGraphDataPointRectRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A4982212E35A1D8E267D43 /* EGMGraphDataPointRectRenderer.h */; };
+		5285B45D00717929A06FB96D /* EGMGraphDataPointRectRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BE1DDEC550B801D965233 /* EGMGraphDataPointRectRenderer.m */; };
+		534A3754152FCA835D18B5EE /* EGMDataPointsLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3CBE4C24F4019FF0AD423 /* EGMDataPointsLineModel.m */; };
+		5722244010090F1D4BDC6256 /* EGMGraphItemRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D974F80868D611FA85EC18 /* EGMGraphItemRenderer.h */; };
+		5805A88D895785F4A91FBF5B /* EGMGraphAxisValueNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F9A7DB81A2172E44BD7978 /* EGMGraphAxisValueNumber.h */; };
+		58AC63F2FB805475652B8D76 /* EGMGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 706BDA9C33059F72A3A83DE2 /* EGMGraphView.h */; };
+		5A1AB83F6488A5AF4BADAB41 /* EGMGraphLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF8B088790FF1545F2FFEE /* EGMGraphLineView.m */; };
+		5B4B88746CF82F629BD80699 /* EGMGraphAxisValueNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F9A7DB81A2172E44BD7978 /* EGMGraphAxisValueNumber.h */; };
+		5BF43D53838EFB2A0CA42812 /* EGMGraphDataPointRectWithNoteTextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB701DD1F196F06EF7965EE9 /* EGMGraphDataPointRectWithNoteTextRenderer.m */; };
+		5C61D13034ED6A569D2CFF32 /* EGMDataPointsLineRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF826DA10045E5B7D032E0F /* EGMDataPointsLineRenderer.h */; };
+		5CAD841DB656B0D6496030F3 /* EGMGraphLabelRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE2B0223A7FBCDBFE659CB /* EGMGraphLabelRenderer.m */; };
+		5F1334655B5F8B193068E6B6 /* EGMDataPointsLineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087836C1F6343D389638295 /* EGMDataPointsLineRenderer.m */; };
+		60B50AE45AB8F574DE9A84D9 /* EGMGraphDataPointRectRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A4982212E35A1D8E267D43 /* EGMGraphDataPointRectRenderer.h */; };
+		617FE8EB9AF01213B7D4B10B /* EGMGraphGuideRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E59ACDDF678AE766F753A96 /* EGMGraphGuideRenderer.m */; };
+		63C8C47FAC48721D25EC8ED0 /* EGMGraphDataPointsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E67F72191968B809C2C6D8E /* EGMGraphDataPointsManager.m */; };
+		650D8CF1F13348FF23D9890B /* EGMGraphDataPointLineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A45F219C8BB0AB1046672F2 /* EGMGraphDataPointLineRenderer.m */; };
+		67C16E7F4C6358F3EE2F4C98 /* EGMGraphRectConflictSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D05EC0210347D1E274387A /* EGMGraphRectConflictSolver.m */; };
+		69DB68AD6A662D1994FEC0FF /* EGMGraphGuideRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E59ACDDF678AE766F753A96 /* EGMGraphGuideRenderer.m */; };
+		6CF7F7CD57255FECB94B0C1D /* EGMGraphConflictSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CB0F343E5B5F88C6FC9AA9 /* EGMGraphConflictSolver.h */; };
+		6EE66635D1B84F5FEBF261C4 /* EGMDataPointsLineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087836C1F6343D389638295 /* EGMDataPointsLineRenderer.m */; };
+		701CDC1295AD89A80883013B /* EGMDataPointSectionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF877BF8EB7EF00FFD4488C1 /* EGMDataPointSectionContainer.m */; };
+		75B381410826A853E473D5CE /* EGMGraphRectConflictSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7309F54094D1771AE9170C8A /* EGMGraphRectConflictSolver.h */; };
+		78024C0C841069CBA4031116 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F348852FC15B94CF758D7AB1 /* Pods-Tests-dummy.m */; };
+		7B1E138D30092A35F57F1617 /* EGMGraphDataPointRectWithNoteTextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB701DD1F196F06EF7965EE9 /* EGMGraphDataPointRectWithNoteTextRenderer.m */; };
+		7BA3C0576E4467A7DB8526E7 /* EGMGraphAxisLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AED8EC1BDF959CA2708E0 /* EGMGraphAxisLabel.m */; };
+		7FEBAF09A69673E43BA325EA /* EGMGraphLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = C29E8D667AA5923E0302B7E3 /* EGMGraphLineView.h */; };
+		80AAFAF0361BEE5F406B4B15 /* EGMGraphItemRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BEE15F790EA31EE79C3288 /* EGMGraphItemRenderer.m */; };
+		8148016A24C85B578A102521 /* EGMGraphLinesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEEAFFA87A71330102730D1 /* EGMGraphLinesManager.h */; };
+		86379FF8B9F9E7BDAB808E74 /* EGMGraphLineManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EAA46ACCE987BC42A99742 /* EGMGraphLineManager.h */; };
+		8AEB35AE9A34F36D77F57382 /* EGMGraphDataPointRectWithNoteTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A879431A5D1540A27B11C7B6 /* EGMGraphDataPointRectWithNoteTextRenderer.h */; };
+		95C9782D8F52FBA899147077 /* EGMGraphAxisRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C8ABD3D14558C1229B176A /* EGMGraphAxisRenderer.h */; };
+		962A8CA0ED25356193141F58 /* EGMGraphItemRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BEE15F790EA31EE79C3288 /* EGMGraphItemRenderer.m */; };
+		988F4DE469856CF197660E8F /* EGMGraphDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D69932F4888B1CECD8F4DE /* EGMGraphDataPoint.m */; };
+		9B360650752B30C15CFE3426 /* EGMGraphDataPointRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B34D808227A5FF7859BEA0C /* EGMGraphDataPointRenderer.m */; };
+		9E75E59675767FCB43B05E62 /* EGMGraphAxisRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C8ABD3D14558C1229B176A /* EGMGraphAxisRenderer.h */; };
+		A0543447C019FE986A07AA5C /* EGMGraphLineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E376145EECA400BDF8D2F072 /* EGMGraphLineRenderer.m */; };
+		A14618DE3A8B6F84842EAAA7 /* EGMGraphDataPointRectTextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784090BCD4FD3FAF6DD2A97 /* EGMGraphDataPointRectTextRenderer.m */; };
+		A74BEFBC0F498274820F3BC4 /* EGMDataPointRectRendererSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F4AA20E279E55622E81DC3 /* EGMDataPointRectRendererSpecification.h */; };
+		A859D8EE01722E9980337545 /* EGMGraphDataPointRectTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 840C8A8185822FA23D784D1F /* EGMGraphDataPointRectTextRenderer.h */; };
+		AD839E3046A03FDC710E2353 /* EGMGraphDataPointLineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A45F219C8BB0AB1046672F2 /* EGMGraphDataPointLineRenderer.m */; };
+		AF0426C1B85A9E602B9EB6BF /* EGMGraphGuideRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 137DD77D673AA5E022BD2083 /* EGMGraphGuideRenderer.h */; };
+		B779760B5EF0AFFFC65C1254 /* EGMGraphItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554A86A28C8B5A388D54CEB /* EGMGraphItemsManager.m */; };
+		B8E7DC8D9DB31079B39CDF61 /* EGMGraphGuideRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 137DD77D673AA5E022BD2083 /* EGMGraphGuideRenderer.h */; };
+		B96D185CC056DB3C515E038A /* EGMGraphLineRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = C198ED2FC40BEFA4261C8702 /* EGMGraphLineRenderer.h */; };
+		B9F74F54CA656EA99EEEFFA7 /* EGMGraphLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8001264E0FB868C80C51D0A7 /* EGMGraphLabelManager.m */; };
+		BA4EF89BF9561A3D1B136D41 /* EGMGraphItemsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7958E7193296791B7D9D3CF1 /* EGMGraphItemsManager.h */; };
+		BB33A569D4DA3144EE93AEFF /* EGMGraphDataPointTargetingRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E40C55E43FC2A4EF91EF13B /* EGMGraphDataPointTargetingRenderer.h */; };
+		BBF7FF1EF6D91523529777C6 /* EGMGraphDataPointRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 919DE25E2F5C1ECB4F9CF731 /* EGMGraphDataPointRenderer.h */; };
+		BC3514F998904CA528DDE33D /* EGMGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DB2CE9804FF49A1FBB0AE1 /* EGMGraphView.m */; };
+		BD4F3DA5E14FF76BF02B26E1 /* EGMGraphLabelRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 01124F9C0F2C92E72A4783C3 /* EGMGraphLabelRenderer.h */; };
+		BF2F09DB011B1BDE73C54071 /* EGMGraphDataPointBarRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F314BCA8A2E2582D024984DE /* EGMGraphDataPointBarRenderer.h */; };
+		C25197737FF6DB55DB1E0CCE /* EGMGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DB2CE9804FF49A1FBB0AE1 /* EGMGraphView.m */; };
+		C295EBF4113EE5137DA3764E /* EGMGraphDataPointsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8549D10C4A95BED581CFF /* EGMGraphDataPointsManager.h */; };
+		C33FA865EC16610E9DF19B2C /* EGMGraphAxisValueDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3936BA2FE186953110F5F2 /* EGMGraphAxisValueDate.h */; };
+		C57882BB04DA011A2F84C5CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD3CB4DBDD53434EF36AC2D /* Foundation.framework */; };
+		C58467FDC4A715AA20FD6318 /* EGMDataPointSectionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B51D0ED8D90496727D77734 /* EGMDataPointSectionContainer.h */; };
+		C64327C20D478A99271826EF /* EGMGraphLineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E376145EECA400BDF8D2F072 /* EGMGraphLineRenderer.m */; };
+		C6832A75516AD1028C02BC43 /* EGMGraphAxisValueDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3936BA2FE186953110F5F2 /* EGMGraphAxisValueDate.h */; };
+		C6B6EB67E77A12BA46DE5405 /* EGMGraphDataPointBarRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DECB33E9B6DCF2E55581B6C /* EGMGraphDataPointBarRenderer.m */; };
+		C6F161F87C3F4D33BC44DFEC /* EGMGraphLabelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BFEA7E353672093D993123 /* EGMGraphLabelManager.h */; };
+		C7379E632783D8C2534FD7C2 /* EGMGraphLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = C29E8D667AA5923E0302B7E3 /* EGMGraphLineView.h */; };
+		D06DBA40F9B17B87371C555B /* EGMGraphAxisValueNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4468690B754C256497BE9FF0 /* EGMGraphAxisValueNumber.m */; };
+		D169A45D10F2E11D9B741EDE /* EGMGraphLabelRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE2B0223A7FBCDBFE659CB /* EGMGraphLabelRenderer.m */; };
+		D307E35BF2152D70DC23B856 /* EGMGraphLineRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = C198ED2FC40BEFA4261C8702 /* EGMGraphLineRenderer.h */; };
+		D3F036D3B8CF5CCF7407FBC4 /* EGMGraphDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D69932F4888B1CECD8F4DE /* EGMGraphDataPoint.m */; };
+		D479AA1856291D39FB4ABDE0 /* EGMGraphDataPointRectWithNoteTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A879431A5D1540A27B11C7B6 /* EGMGraphDataPointRectWithNoteTextRenderer.h */; };
+		D4814063E5EB760C646F7AB5 /* EGMGraphLinesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEEAFFA87A71330102730D1 /* EGMGraphLinesManager.h */; };
+		D4E8DE730FE6BF1DBE802DC4 /* EGMGraphLineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A15687C897F201F177696 /* EGMGraphLineManager.m */; };
+		D5DF85E2E33F492BCC4E81AC /* EGMGraphConflictSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CB0F343E5B5F88C6FC9AA9 /* EGMGraphConflictSolver.h */; };
+		D62BB58A798CFB83BE42F6BE /* EGMGraphDataPointRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B34D808227A5FF7859BEA0C /* EGMGraphDataPointRenderer.m */; };
+		D823417D748652E79246430D /* Pods-Charts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE9B50A22056C0FBA60041B /* Pods-Charts-dummy.m */; };
+		D8D3948E13001C2AB109326E /* EGMGraphLineManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EAA46ACCE987BC42A99742 /* EGMGraphLineManager.h */; };
+		DA60C624F8CDD65FD733E1F7 /* EGMGraphAxisValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C6D4787B4096F8A9C6596 /* EGMGraphAxisValue.m */; };
+		DDD11070424CF0248A2D3E4A /* EGMDataPointsLineRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF826DA10045E5B7D032E0F /* EGMDataPointsLineRenderer.h */; };
+		DE3C30992667D78367D77EBA /* EGMGraphAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CC1A0F49B792A9788B181 /* EGMGraphAxisRenderer.m */; };
+		DEFE57CD6278ACCB0C3132E5 /* EGMGraphRectConflictSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7309F54094D1771AE9170C8A /* EGMGraphRectConflictSolver.h */; };
+		E02608D45C661400DA22A934 /* EGMDataPointsLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3CBE4C24F4019FF0AD423 /* EGMDataPointsLineModel.m */; };
+		E230FAB410ACF060C7AD59C8 /* EGMGraphAxisValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE7F8A12B14CFA60FC3557E /* EGMGraphAxisValue.h */; };
+		E2D6EF60A0282E4CAA1B652E /* EGMGraphDataPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B5EB1477C11127C21C9897 /* EGMGraphDataPoint.h */; };
+		E3C4C0777FB854577C95C661 /* EGMGraphAxisLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C6F62DABEF6F685FE64226 /* EGMGraphAxisLabel.h */; };
+		E40D1A85AE55C092D9F6CCC3 /* EGMGraphRectConflictSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D05EC0210347D1E274387A /* EGMGraphRectConflictSolver.m */; };
+		E566166D1567F48773F0A5BD /* EGMGraphAxisValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE7F8A12B14CFA60FC3557E /* EGMGraphAxisValue.h */; };
+		E60DEEC92DB66993BB8207AB /* EGMGraphGuidelineManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B85C5736360D379FDB03F0 /* EGMGraphGuidelineManager.h */; };
+		E63A35FEF0C6E1BD08E02246 /* EGMGraphAxisValueNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4468690B754C256497BE9FF0 /* EGMGraphAxisValueNumber.m */; };
+		E727B037EA9123926315F837 /* EGMGraphAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CC1A0F49B792A9788B181 /* EGMGraphAxisRenderer.m */; };
+		EB025E62F15F430B4ED7892C /* EGMGraphLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF8B088790FF1545F2FFEE /* EGMGraphLineView.m */; };
+		F0B892B6D33A9269EBF1AE09 /* EGMGraphAxisLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C6F62DABEF6F685FE64226 /* EGMGraphAxisLabel.h */; };
+		F19865B13AFC586095E78EDF /* EGMDataPointRectRendererSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F4AA20E279E55622E81DC3 /* EGMDataPointRectRendererSpecification.h */; };
+		F2C6DB925B4995269511E605 /* EGMGraphGuidelineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA85EF3B0151025A1FF1CC0 /* EGMGraphGuidelineManager.m */; };
+		F56DDC6206ECDB6A7A2A7990 /* EGMGraphUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB15064A9FA9D9C3177182D2 /* EGMGraphUtils.m */; };
+		F9348126FAFC2B687F42BAAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD3CB4DBDD53434EF36AC2D /* Foundation.framework */; };
+		FAD250F2CC05FE153AAB0654 /* EGMGraphDataPointRectTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 840C8A8185822FA23D784D1F /* EGMGraphDataPointRectTextRenderer.h */; };
+		FADBD41CC1B6AE12F2D419DD /* EGMGraphLineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A15687C897F201F177696 /* EGMGraphLineManager.m */; };
+		FC6A605FA1E3E1E90D300C38 /* EGMGraphLabelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BFEA7E353672093D993123 /* EGMGraphLabelManager.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DD9FE278EEFBF3A590A3D88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5562126558F53805441E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA99CB722B5832415585888;
+			remoteInfo = Charts;
+		};
+		7768D412D0880EDD30170393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5562126558F53805441E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA99CB722B5832415585888;
+			remoteInfo = Charts;
+		};
+		CD586C995DCF7F56325FCA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5562126558F53805441E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7EB9FA5625506AF9E0FE4FE;
+			remoteInfo = "Pods-Tests-Charts";
+		};
+		EEE3724AFF26E6D0FA7405E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5562126558F53805441E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7C8E6DB1973FCD19D781DDF;
+			remoteInfo = "Pods-Charts-Charts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0087836C1F6343D389638295 /* EGMDataPointsLineRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMDataPointsLineRenderer.m; path = Pod/Classes/renderer/manager/section/EGMDataPointsLineRenderer.m; sourceTree = "<group>"; };
+		01124F9C0F2C92E72A4783C3 /* EGMGraphLabelRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphLabelRenderer.h; path = Pod/Classes/renderer/model/EGMGraphLabelRenderer.h; sourceTree = "<group>"; };
+		05C8ABD3D14558C1229B176A /* EGMGraphAxisRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphAxisRenderer.h; path = Pod/Classes/renderer/model/EGMGraphAxisRenderer.h; sourceTree = "<group>"; };
+		0784090BCD4FD3FAF6DD2A97 /* EGMGraphDataPointRectTextRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointRectTextRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointRectTextRenderer.m; sourceTree = "<group>"; };
+		078798F4BCEBE9F326FEEC6B /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C9A15687C897F201F177696 /* EGMGraphLineManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphLineManager.m; path = Pod/Classes/renderer/manager/EGMGraphLineManager.m; sourceTree = "<group>"; };
+		0FC3CBE4C24F4019FF0AD423 /* EGMDataPointsLineModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMDataPointsLineModel.m; path = Pod/Classes/renderer/manager/section/EGMDataPointsLineModel.m; sourceTree = "<group>"; };
+		11DB2CE9804FF49A1FBB0AE1 /* EGMGraphView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphView.m; path = Pod/Classes/view/EGMGraphView.m; sourceTree = "<group>"; };
+		137DD77D673AA5E022BD2083 /* EGMGraphGuideRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphGuideRenderer.h; path = Pod/Classes/renderer/model/EGMGraphGuideRenderer.h; sourceTree = "<group>"; };
+		185AED8EC1BDF959CA2708E0 /* EGMGraphAxisLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphAxisLabel.m; path = Pod/Classes/renderer/model/EGMGraphAxisLabel.m; sourceTree = "<group>"; };
+		1ABDB4D930E531AFD50C5940 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1AEAADA5BFE6F9F5D117785F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B34D808227A5FF7859BEA0C /* EGMGraphDataPointRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointRenderer.m; sourceTree = "<group>"; };
+		1E59ACDDF678AE766F753A96 /* EGMGraphGuideRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphGuideRenderer.m; path = Pod/Classes/renderer/model/EGMGraphGuideRenderer.m; sourceTree = "<group>"; };
+		2D04EF3105C5F6F462CD05B8 /* Pods-Charts-Charts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Charts-Charts-prefix.pch"; sourceTree = "<group>"; };
+		2E460B024850D350A0D4795A /* Pods-Tests-Charts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-Charts-dummy.m"; path = "../Pods-Tests-Charts/Pods-Tests-Charts-dummy.m"; sourceTree = "<group>"; };
+		2EA85EF3B0151025A1FF1CC0 /* EGMGraphGuidelineManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphGuidelineManager.m; path = Pod/Classes/renderer/manager/EGMGraphGuidelineManager.m; sourceTree = "<group>"; };
+		32CB0F343E5B5F88C6FC9AA9 /* EGMGraphConflictSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphConflictSolver.h; path = Pod/Classes/renderer/manager/EGMGraphConflictSolver.h; sourceTree = "<group>"; };
+		33EAA46ACCE987BC42A99742 /* EGMGraphLineManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphLineManager.h; path = Pod/Classes/renderer/manager/EGMGraphLineManager.h; sourceTree = "<group>"; };
+		3A45F219C8BB0AB1046672F2 /* EGMGraphDataPointLineRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointLineRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointLineRenderer.m; sourceTree = "<group>"; };
+		3A59B99DED2D9D7C9C0601B0 /* Pods-Charts-Charts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Charts-Charts-dummy.m"; sourceTree = "<group>"; };
+		3F94F4752805658321C38D45 /* libPods-Charts-Charts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Charts-Charts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4266A7C37CAA2B7586D02BA9 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4468690B754C256497BE9FF0 /* EGMGraphAxisValueNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphAxisValueNumber.m; path = Pod/Classes/model/EGMGraphAxisValueNumber.m; sourceTree = "<group>"; };
+		47EEA27FA55A4C6455062143 /* Pods-Charts-Charts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Charts-Charts.xcconfig"; sourceTree = "<group>"; };
+		4BEEAFFA87A71330102730D1 /* EGMGraphLinesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphLinesManager.h; path = Pod/Classes/renderer/manager/EGMGraphLinesManager.h; sourceTree = "<group>"; };
+		4C3936BA2FE186953110F5F2 /* EGMGraphAxisValueDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphAxisValueDate.h; path = Pod/Classes/model/EGMGraphAxisValueDate.h; sourceTree = "<group>"; };
+		4F209B17746AC938E91659B0 /* libPods-Charts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Charts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BFEA7E353672093D993123 /* EGMGraphLabelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphLabelManager.h; path = Pod/Classes/renderer/manager/EGMGraphLabelManager.h; sourceTree = "<group>"; };
+		5445463CFF0BFBF20E14F54D /* Pods-Tests-Charts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-Charts-Private.xcconfig"; path = "../Pods-Tests-Charts/Pods-Tests-Charts-Private.xcconfig"; sourceTree = "<group>"; };
+		5DECB33E9B6DCF2E55581B6C /* EGMGraphDataPointBarRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointBarRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointBarRenderer.m; sourceTree = "<group>"; };
+		620BE1DDEC550B801D965233 /* EGMGraphDataPointRectRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointRectRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointRectRenderer.m; sourceTree = "<group>"; };
+		62512E9C9775D67A362F01E2 /* EGMGraphDataPointTargetingRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointTargetingRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointTargetingRenderer.m; sourceTree = "<group>"; };
+		6554A86A28C8B5A388D54CEB /* EGMGraphItemsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphItemsManager.m; path = Pod/Classes/renderer/manager/EGMGraphItemsManager.m; sourceTree = "<group>"; };
+		666FA76C7B34E6417B2AA3B6 /* Pods-Charts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Charts.debug.xcconfig"; sourceTree = "<group>"; };
+		6B51D0ED8D90496727D77734 /* EGMDataPointSectionContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMDataPointSectionContainer.h; path = Pod/Classes/renderer/manager/section/EGMDataPointSectionContainer.h; sourceTree = "<group>"; };
+		6BD75AAEA14EEB89D2DD76F6 /* EGMGraphUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphUtils.h; path = Pod/Classes/utils/EGMGraphUtils.h; sourceTree = "<group>"; };
+		706BDA9C33059F72A3A83DE2 /* EGMGraphView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphView.h; path = Pod/Classes/view/EGMGraphView.h; sourceTree = "<group>"; };
+		7309F54094D1771AE9170C8A /* EGMGraphRectConflictSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphRectConflictSolver.h; path = Pod/Classes/renderer/manager/EGMGraphRectConflictSolver.h; sourceTree = "<group>"; };
+		7958E7193296791B7D9D3CF1 /* EGMGraphItemsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphItemsManager.h; path = Pod/Classes/renderer/manager/EGMGraphItemsManager.h; sourceTree = "<group>"; };
+		7ACF8B088790FF1545F2FFEE /* EGMGraphLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphLineView.m; path = Pod/Classes/view/EGMGraphLineView.m; sourceTree = "<group>"; };
+		8001264E0FB868C80C51D0A7 /* EGMGraphLabelManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphLabelManager.m; path = Pod/Classes/renderer/manager/EGMGraphLabelManager.m; sourceTree = "<group>"; };
+		83D05EC0210347D1E274387A /* EGMGraphRectConflictSolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphRectConflictSolver.m; path = Pod/Classes/renderer/manager/EGMGraphRectConflictSolver.m; sourceTree = "<group>"; };
+		840C8A8185822FA23D784D1F /* EGMGraphDataPointRectTextRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointRectTextRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointRectTextRenderer.h; sourceTree = "<group>"; };
+		86A4982212E35A1D8E267D43 /* EGMGraphDataPointRectRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointRectRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointRectRenderer.h; sourceTree = "<group>"; };
+		91381BEBFB7B2C71167AB60F /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		919DE25E2F5C1ECB4F9CF731 /* EGMGraphDataPointRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointRenderer.h; sourceTree = "<group>"; };
+		93132D7C531F23EADF54F569 /* Pods-Charts-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Charts-environment.h"; sourceTree = "<group>"; };
+		93C6F62DABEF6F685FE64226 /* EGMGraphAxisLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphAxisLabel.h; path = Pod/Classes/renderer/model/EGMGraphAxisLabel.h; sourceTree = "<group>"; };
+		9A6ABEAB6B6F7E288D3940BE /* libPods-Tests-Charts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Charts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0C6D4787B4096F8A9C6596 /* EGMGraphAxisValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphAxisValue.m; path = Pod/Classes/model/EGMGraphAxisValue.m; sourceTree = "<group>"; };
+		9E40C55E43FC2A4EF91EF13B /* EGMGraphDataPointTargetingRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointTargetingRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointTargetingRenderer.h; sourceTree = "<group>"; };
+		9E67F72191968B809C2C6D8E /* EGMGraphDataPointsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointsManager.m; path = Pod/Classes/renderer/manager/EGMGraphDataPointsManager.m; sourceTree = "<group>"; };
+		A0B5EB1477C11127C21C9897 /* EGMGraphDataPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPoint.h; path = Pod/Classes/model/EGMGraphDataPoint.h; sourceTree = "<group>"; };
+		A0BEE15F790EA31EE79C3288 /* EGMGraphItemRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphItemRenderer.m; path = Pod/Classes/renderer/model/EGMGraphItemRenderer.m; sourceTree = "<group>"; };
+		A201E7D63A8D574CEF2B4D52 /* Pods-Charts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Charts.release.xcconfig"; sourceTree = "<group>"; };
+		A2D925C85AFD4F4BC291D854 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		A879431A5D1540A27B11C7B6 /* EGMGraphDataPointRectWithNoteTextRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointRectWithNoteTextRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointRectWithNoteTextRenderer.h; sourceTree = "<group>"; };
+		AFF826DA10045E5B7D032E0F /* EGMDataPointsLineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMDataPointsLineRenderer.h; path = Pod/Classes/renderer/manager/section/EGMDataPointsLineRenderer.h; sourceTree = "<group>"; };
+		BCE9B50A22056C0FBA60041B /* Pods-Charts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Charts-dummy.m"; sourceTree = "<group>"; };
+		BEE7F8A12B14CFA60FC3557E /* EGMGraphAxisValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphAxisValue.h; path = Pod/Classes/model/EGMGraphAxisValue.h; sourceTree = "<group>"; };
+		C198ED2FC40BEFA4261C8702 /* EGMGraphLineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphLineRenderer.h; path = Pod/Classes/renderer/model/EGMGraphLineRenderer.h; sourceTree = "<group>"; };
+		C1B85C5736360D379FDB03F0 /* EGMGraphGuidelineManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphGuidelineManager.h; path = Pod/Classes/renderer/manager/EGMGraphGuidelineManager.h; sourceTree = "<group>"; };
+		C29E8D667AA5923E0302B7E3 /* EGMGraphLineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphLineView.h; path = Pod/Classes/view/EGMGraphLineView.h; sourceTree = "<group>"; };
+		C8F9A7DB81A2172E44BD7978 /* EGMGraphAxisValueNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphAxisValueNumber.h; path = Pod/Classes/model/EGMGraphAxisValueNumber.h; sourceTree = "<group>"; };
+		C9A31EB8999B7B22E99A4DB7 /* EGMDataPointsLineModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMDataPointsLineModel.h; path = Pod/Classes/renderer/manager/section/EGMDataPointsLineModel.h; sourceTree = "<group>"; };
+		CBCF9581829A5A6BDB4C7006 /* Pods-Charts-Charts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Charts-Charts-Private.xcconfig"; sourceTree = "<group>"; };
+		CCA8549D10C4A95BED581CFF /* EGMGraphDataPointsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointsManager.h; path = Pod/Classes/renderer/manager/EGMGraphDataPointsManager.h; sourceTree = "<group>"; };
+		CD98C1FB462C8C765EE516B8 /* Pods-Charts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Charts-acknowledgements.plist"; sourceTree = "<group>"; };
+		CFFD240E8858340637BD557C /* Charts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Charts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D974F80868D611FA85EC18 /* EGMGraphItemRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphItemRenderer.h; path = Pod/Classes/renderer/model/EGMGraphItemRenderer.h; sourceTree = "<group>"; };
+		D480DEB445B0B875A200A038 /* EGMGraphLinesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphLinesManager.m; path = Pod/Classes/renderer/manager/EGMGraphLinesManager.m; sourceTree = "<group>"; };
+		D8E08B6AD1A88E69882DD0D7 /* EGMGraphAxisValueDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphAxisValueDate.m; path = Pod/Classes/model/EGMGraphAxisValueDate.m; sourceTree = "<group>"; };
+		DCDBA49DF293D83932EE2B0F /* Pods-Tests-Charts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-Charts.xcconfig"; path = "../Pods-Tests-Charts/Pods-Tests-Charts.xcconfig"; sourceTree = "<group>"; };
+		DF7C1DEC0DDEE5E12D3BCB54 /* Pods-Charts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Charts-resources.sh"; sourceTree = "<group>"; };
+		E03CC1A0F49B792A9788B181 /* EGMGraphAxisRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphAxisRenderer.m; path = Pod/Classes/renderer/model/EGMGraphAxisRenderer.m; sourceTree = "<group>"; };
+		E0D69932F4888B1CECD8F4DE /* EGMGraphDataPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPoint.m; path = Pod/Classes/model/EGMGraphDataPoint.m; sourceTree = "<group>"; };
+		E376145EECA400BDF8D2F072 /* EGMGraphLineRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphLineRenderer.m; path = Pod/Classes/renderer/model/EGMGraphLineRenderer.m; sourceTree = "<group>"; };
+		E77410C3A2061B121521D01C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB701DD1F196F06EF7965EE9 /* EGMGraphDataPointRectWithNoteTextRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphDataPointRectWithNoteTextRenderer.m; path = Pod/Classes/renderer/model/EGMGraphDataPointRectWithNoteTextRenderer.m; sourceTree = "<group>"; };
+		ECBFC192E8A8C2FDB94F5447 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ECDF7418ABB05AA3C9DB8165 /* EGMGraphDataPointLineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointLineRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointLineRenderer.h; sourceTree = "<group>"; };
+		ED449C310AFC20CD6D1A3475 /* Pods-Charts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Charts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF877BF8EB7EF00FFD4488C1 /* EGMDataPointSectionContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMDataPointSectionContainer.m; path = Pod/Classes/renderer/manager/section/EGMDataPointSectionContainer.m; sourceTree = "<group>"; };
+		F03405D273E150DFA4784391 /* Pods-Tests-Charts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-Charts-prefix.pch"; path = "../Pods-Tests-Charts/Pods-Tests-Charts-prefix.pch"; sourceTree = "<group>"; };
+		F2F4AA20E279E55622E81DC3 /* EGMDataPointRectRendererSpecification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMDataPointRectRendererSpecification.h; path = Pod/Classes/renderer/model/EGMDataPointRectRendererSpecification.h; sourceTree = "<group>"; };
+		F314BCA8A2E2582D024984DE /* EGMGraphDataPointBarRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EGMGraphDataPointBarRenderer.h; path = Pod/Classes/renderer/model/EGMGraphDataPointBarRenderer.h; sourceTree = "<group>"; };
+		F348852FC15B94CF758D7AB1 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		FB15064A9FA9D9C3177182D2 /* EGMGraphUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphUtils.m; path = Pod/Classes/utils/EGMGraphUtils.m; sourceTree = "<group>"; };
+		FCD3CB4DBDD53434EF36AC2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FEEE2B0223A7FBCDBFE659CB /* EGMGraphLabelRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EGMGraphLabelRenderer.m; path = Pod/Classes/renderer/model/EGMGraphLabelRenderer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324C1BD3ECEE92EA63C56269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9348126FAFC2B687F42BAAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		895078D0EA480A53792393F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57882BB04DA011A2F84C5CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0853D36475411431E68C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979F0DE978E6A6552470BDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16091DE8345CC21D39EB4444 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB1602B71E2E09C3E62D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0FB938C504D9B335816879 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45F812FD7152C658BE7772E5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F85412F3A6F53A4F259FE901 /* Charts */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		468F9549A16EE6654DC14041 = {
+			isa = PBXGroup;
+			children = (
+				1ABDB4D930E531AFD50C5940 /* Podfile */,
+				45F812FD7152C658BE7772E5 /* Development Pods */,
+				ECC031F89373366138527845 /* Frameworks */,
+				606DB5C463B471A814EE21CE /* Products */,
+				C1AE65B386722F27E97A1B9E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		606DB5C463B471A814EE21CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFFD240E8858340637BD557C /* Charts.bundle */,
+				4F209B17746AC938E91659B0 /* libPods-Charts.a */,
+				3F94F4752805658321C38D45 /* libPods-Charts-Charts.a */,
+				E77410C3A2061B121521D01C /* libPods-Tests.a */,
+				9A6ABEAB6B6F7E288D3940BE /* libPods-Tests-Charts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		673A95F906E9EB5477ED0AF5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47EEA27FA55A4C6455062143 /* Pods-Charts-Charts.xcconfig */,
+				CBCF9581829A5A6BDB4C7006 /* Pods-Charts-Charts-Private.xcconfig */,
+				3A59B99DED2D9D7C9C0601B0 /* Pods-Charts-Charts-dummy.m */,
+				2D04EF3105C5F6F462CD05B8 /* Pods-Charts-Charts-prefix.pch */,
+				DCDBA49DF293D83932EE2B0F /* Pods-Tests-Charts.xcconfig */,
+				5445463CFF0BFBF20E14F54D /* Pods-Tests-Charts-Private.xcconfig */,
+				2E460B024850D350A0D4795A /* Pods-Tests-Charts-dummy.m */,
+				F03405D273E150DFA4784391 /* Pods-Tests-Charts-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-Charts-Charts";
+			sourceTree = "<group>";
+		};
+		790509156B79CDD862E6F06B /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4266A7C37CAA2B7586D02BA9 /* Pods-Tests-acknowledgements.markdown */,
+				078798F4BCEBE9F326FEEC6B /* Pods-Tests-acknowledgements.plist */,
+				F348852FC15B94CF758D7AB1 /* Pods-Tests-dummy.m */,
+				91381BEBFB7B2C71167AB60F /* Pods-Tests-environment.h */,
+				A2D925C85AFD4F4BC291D854 /* Pods-Tests-resources.sh */,
+				1AEAADA5BFE6F9F5D117785F /* Pods-Tests.debug.xcconfig */,
+				ECBFC192E8A8C2FDB94F5447 /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		880D95D7CC215679C6E4BD91 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCD3CB4DBDD53434EF36AC2D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1AE65B386722F27E97A1B9E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E559AF6BD8934D6FE78C1092 /* Pods-Charts */,
+				790509156B79CDD862E6F06B /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E559AF6BD8934D6FE78C1092 /* Pods-Charts */ = {
+			isa = PBXGroup;
+			children = (
+				ED449C310AFC20CD6D1A3475 /* Pods-Charts-acknowledgements.markdown */,
+				CD98C1FB462C8C765EE516B8 /* Pods-Charts-acknowledgements.plist */,
+				BCE9B50A22056C0FBA60041B /* Pods-Charts-dummy.m */,
+				93132D7C531F23EADF54F569 /* Pods-Charts-environment.h */,
+				DF7C1DEC0DDEE5E12D3BCB54 /* Pods-Charts-resources.sh */,
+				666FA76C7B34E6417B2AA3B6 /* Pods-Charts.debug.xcconfig */,
+				A201E7D63A8D574CEF2B4D52 /* Pods-Charts.release.xcconfig */,
+			);
+			name = "Pods-Charts";
+			path = "Target Support Files/Pods-Charts";
+			sourceTree = "<group>";
+		};
+		ECC031F89373366138527845 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				880D95D7CC215679C6E4BD91 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F85412F3A6F53A4F259FE901 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				F2F4AA20E279E55622E81DC3 /* EGMDataPointRectRendererSpecification.h */,
+				6B51D0ED8D90496727D77734 /* EGMDataPointSectionContainer.h */,
+				EF877BF8EB7EF00FFD4488C1 /* EGMDataPointSectionContainer.m */,
+				C9A31EB8999B7B22E99A4DB7 /* EGMDataPointsLineModel.h */,
+				0FC3CBE4C24F4019FF0AD423 /* EGMDataPointsLineModel.m */,
+				AFF826DA10045E5B7D032E0F /* EGMDataPointsLineRenderer.h */,
+				0087836C1F6343D389638295 /* EGMDataPointsLineRenderer.m */,
+				93C6F62DABEF6F685FE64226 /* EGMGraphAxisLabel.h */,
+				185AED8EC1BDF959CA2708E0 /* EGMGraphAxisLabel.m */,
+				05C8ABD3D14558C1229B176A /* EGMGraphAxisRenderer.h */,
+				E03CC1A0F49B792A9788B181 /* EGMGraphAxisRenderer.m */,
+				BEE7F8A12B14CFA60FC3557E /* EGMGraphAxisValue.h */,
+				9B0C6D4787B4096F8A9C6596 /* EGMGraphAxisValue.m */,
+				4C3936BA2FE186953110F5F2 /* EGMGraphAxisValueDate.h */,
+				D8E08B6AD1A88E69882DD0D7 /* EGMGraphAxisValueDate.m */,
+				C8F9A7DB81A2172E44BD7978 /* EGMGraphAxisValueNumber.h */,
+				4468690B754C256497BE9FF0 /* EGMGraphAxisValueNumber.m */,
+				32CB0F343E5B5F88C6FC9AA9 /* EGMGraphConflictSolver.h */,
+				A0B5EB1477C11127C21C9897 /* EGMGraphDataPoint.h */,
+				E0D69932F4888B1CECD8F4DE /* EGMGraphDataPoint.m */,
+				F314BCA8A2E2582D024984DE /* EGMGraphDataPointBarRenderer.h */,
+				5DECB33E9B6DCF2E55581B6C /* EGMGraphDataPointBarRenderer.m */,
+				ECDF7418ABB05AA3C9DB8165 /* EGMGraphDataPointLineRenderer.h */,
+				3A45F219C8BB0AB1046672F2 /* EGMGraphDataPointLineRenderer.m */,
+				86A4982212E35A1D8E267D43 /* EGMGraphDataPointRectRenderer.h */,
+				620BE1DDEC550B801D965233 /* EGMGraphDataPointRectRenderer.m */,
+				840C8A8185822FA23D784D1F /* EGMGraphDataPointRectTextRenderer.h */,
+				0784090BCD4FD3FAF6DD2A97 /* EGMGraphDataPointRectTextRenderer.m */,
+				A879431A5D1540A27B11C7B6 /* EGMGraphDataPointRectWithNoteTextRenderer.h */,
+				EB701DD1F196F06EF7965EE9 /* EGMGraphDataPointRectWithNoteTextRenderer.m */,
+				919DE25E2F5C1ECB4F9CF731 /* EGMGraphDataPointRenderer.h */,
+				1B34D808227A5FF7859BEA0C /* EGMGraphDataPointRenderer.m */,
+				9E40C55E43FC2A4EF91EF13B /* EGMGraphDataPointTargetingRenderer.h */,
+				62512E9C9775D67A362F01E2 /* EGMGraphDataPointTargetingRenderer.m */,
+				CCA8549D10C4A95BED581CFF /* EGMGraphDataPointsManager.h */,
+				9E67F72191968B809C2C6D8E /* EGMGraphDataPointsManager.m */,
+				137DD77D673AA5E022BD2083 /* EGMGraphGuideRenderer.h */,
+				1E59ACDDF678AE766F753A96 /* EGMGraphGuideRenderer.m */,
+				C1B85C5736360D379FDB03F0 /* EGMGraphGuidelineManager.h */,
+				2EA85EF3B0151025A1FF1CC0 /* EGMGraphGuidelineManager.m */,
+				D0D974F80868D611FA85EC18 /* EGMGraphItemRenderer.h */,
+				A0BEE15F790EA31EE79C3288 /* EGMGraphItemRenderer.m */,
+				7958E7193296791B7D9D3CF1 /* EGMGraphItemsManager.h */,
+				6554A86A28C8B5A388D54CEB /* EGMGraphItemsManager.m */,
+				51BFEA7E353672093D993123 /* EGMGraphLabelManager.h */,
+				8001264E0FB868C80C51D0A7 /* EGMGraphLabelManager.m */,
+				01124F9C0F2C92E72A4783C3 /* EGMGraphLabelRenderer.h */,
+				FEEE2B0223A7FBCDBFE659CB /* EGMGraphLabelRenderer.m */,
+				33EAA46ACCE987BC42A99742 /* EGMGraphLineManager.h */,
+				0C9A15687C897F201F177696 /* EGMGraphLineManager.m */,
+				C198ED2FC40BEFA4261C8702 /* EGMGraphLineRenderer.h */,
+				E376145EECA400BDF8D2F072 /* EGMGraphLineRenderer.m */,
+				C29E8D667AA5923E0302B7E3 /* EGMGraphLineView.h */,
+				7ACF8B088790FF1545F2FFEE /* EGMGraphLineView.m */,
+				4BEEAFFA87A71330102730D1 /* EGMGraphLinesManager.h */,
+				D480DEB445B0B875A200A038 /* EGMGraphLinesManager.m */,
+				7309F54094D1771AE9170C8A /* EGMGraphRectConflictSolver.h */,
+				83D05EC0210347D1E274387A /* EGMGraphRectConflictSolver.m */,
+				6BD75AAEA14EEB89D2DD76F6 /* EGMGraphUtils.h */,
+				FB15064A9FA9D9C3177182D2 /* EGMGraphUtils.m */,
+				706BDA9C33059F72A3A83DE2 /* EGMGraphView.h */,
+				11DB2CE9804FF49A1FBB0AE1 /* EGMGraphView.m */,
+				673A95F906E9EB5477ED0AF5 /* Support Files */,
+			);
+			name = Charts;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F71641307120D37A396D6BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74BEFBC0F498274820F3BC4 /* EGMDataPointRectRendererSpecification.h in Headers */,
+				4090ACA450080D797DADB4ED /* EGMDataPointSectionContainer.h in Headers */,
+				0B910678E555BF40649F6D06 /* EGMDataPointsLineModel.h in Headers */,
+				DDD11070424CF0248A2D3E4A /* EGMDataPointsLineRenderer.h in Headers */,
+				E3C4C0777FB854577C95C661 /* EGMGraphAxisLabel.h in Headers */,
+				9E75E59675767FCB43B05E62 /* EGMGraphAxisRenderer.h in Headers */,
+				E566166D1567F48773F0A5BD /* EGMGraphAxisValue.h in Headers */,
+				C6832A75516AD1028C02BC43 /* EGMGraphAxisValueDate.h in Headers */,
+				5805A88D895785F4A91FBF5B /* EGMGraphAxisValueNumber.h in Headers */,
+				D5DF85E2E33F492BCC4E81AC /* EGMGraphConflictSolver.h in Headers */,
+				E2D6EF60A0282E4CAA1B652E /* EGMGraphDataPoint.h in Headers */,
+				BF2F09DB011B1BDE73C54071 /* EGMGraphDataPointBarRenderer.h in Headers */,
+				2DF1C757B1BF8CA75A62EE73 /* EGMGraphDataPointLineRenderer.h in Headers */,
+				60B50AE45AB8F574DE9A84D9 /* EGMGraphDataPointRectRenderer.h in Headers */,
+				A859D8EE01722E9980337545 /* EGMGraphDataPointRectTextRenderer.h in Headers */,
+				8AEB35AE9A34F36D77F57382 /* EGMGraphDataPointRectWithNoteTextRenderer.h in Headers */,
+				2662D30300B8002B28932064 /* EGMGraphDataPointRenderer.h in Headers */,
+				BB33A569D4DA3144EE93AEFF /* EGMGraphDataPointTargetingRenderer.h in Headers */,
+				C295EBF4113EE5137DA3764E /* EGMGraphDataPointsManager.h in Headers */,
+				B8E7DC8D9DB31079B39CDF61 /* EGMGraphGuideRenderer.h in Headers */,
+				E60DEEC92DB66993BB8207AB /* EGMGraphGuidelineManager.h in Headers */,
+				2EDB5F3856B912F589F2ACCF /* EGMGraphItemRenderer.h in Headers */,
+				BA4EF89BF9561A3D1B136D41 /* EGMGraphItemsManager.h in Headers */,
+				FC6A605FA1E3E1E90D300C38 /* EGMGraphLabelManager.h in Headers */,
+				BD4F3DA5E14FF76BF02B26E1 /* EGMGraphLabelRenderer.h in Headers */,
+				D8D3948E13001C2AB109326E /* EGMGraphLineManager.h in Headers */,
+				D307E35BF2152D70DC23B856 /* EGMGraphLineRenderer.h in Headers */,
+				7FEBAF09A69673E43BA325EA /* EGMGraphLineView.h in Headers */,
+				D4814063E5EB760C646F7AB5 /* EGMGraphLinesManager.h in Headers */,
+				75B381410826A853E473D5CE /* EGMGraphRectConflictSolver.h in Headers */,
+				240449C950289B310F84CB8A /* EGMGraphUtils.h in Headers */,
+				58AC63F2FB805475652B8D76 /* EGMGraphView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64C6B8C2AE510596DC2C492 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19865B13AFC586095E78EDF /* EGMDataPointRectRendererSpecification.h in Headers */,
+				C58467FDC4A715AA20FD6318 /* EGMDataPointSectionContainer.h in Headers */,
+				0810C964AB1C922F24AB99CD /* EGMDataPointsLineModel.h in Headers */,
+				5C61D13034ED6A569D2CFF32 /* EGMDataPointsLineRenderer.h in Headers */,
+				F0B892B6D33A9269EBF1AE09 /* EGMGraphAxisLabel.h in Headers */,
+				95C9782D8F52FBA899147077 /* EGMGraphAxisRenderer.h in Headers */,
+				E230FAB410ACF060C7AD59C8 /* EGMGraphAxisValue.h in Headers */,
+				C33FA865EC16610E9DF19B2C /* EGMGraphAxisValueDate.h in Headers */,
+				5B4B88746CF82F629BD80699 /* EGMGraphAxisValueNumber.h in Headers */,
+				6CF7F7CD57255FECB94B0C1D /* EGMGraphConflictSolver.h in Headers */,
+				0BB16DF4D6786BEAEA7E4164 /* EGMGraphDataPoint.h in Headers */,
+				158CF359400115BA6B4C42A6 /* EGMGraphDataPointBarRenderer.h in Headers */,
+				1F5D86054937F1EDE03E5763 /* EGMGraphDataPointLineRenderer.h in Headers */,
+				50AE18F6086CF0C8DF0B5B59 /* EGMGraphDataPointRectRenderer.h in Headers */,
+				FAD250F2CC05FE153AAB0654 /* EGMGraphDataPointRectTextRenderer.h in Headers */,
+				D479AA1856291D39FB4ABDE0 /* EGMGraphDataPointRectWithNoteTextRenderer.h in Headers */,
+				BBF7FF1EF6D91523529777C6 /* EGMGraphDataPointRenderer.h in Headers */,
+				1F2682B5D6A294B6BA7FEFE0 /* EGMGraphDataPointTargetingRenderer.h in Headers */,
+				0F9D3A854C4DBCD01E587AB5 /* EGMGraphDataPointsManager.h in Headers */,
+				AF0426C1B85A9E602B9EB6BF /* EGMGraphGuideRenderer.h in Headers */,
+				499957E1889A09A41456508B /* EGMGraphGuidelineManager.h in Headers */,
+				5722244010090F1D4BDC6256 /* EGMGraphItemRenderer.h in Headers */,
+				1977610A7342BB30E464ADD2 /* EGMGraphItemsManager.h in Headers */,
+				C6F161F87C3F4D33BC44DFEC /* EGMGraphLabelManager.h in Headers */,
+				082FB569541CAAC603E6A08B /* EGMGraphLabelRenderer.h in Headers */,
+				86379FF8B9F9E7BDAB808E74 /* EGMGraphLineManager.h in Headers */,
+				B96D185CC056DB3C515E038A /* EGMGraphLineRenderer.h in Headers */,
+				C7379E632783D8C2534FD7C2 /* EGMGraphLineView.h in Headers */,
+				8148016A24C85B578A102521 /* EGMGraphLinesManager.h in Headers */,
+				DEFE57CD6278ACCB0C3132E5 /* EGMGraphRectConflictSolver.h in Headers */,
+				361E458463027FAEAF2CD52A /* EGMGraphUtils.h in Headers */,
+				393AF77B74892261A94EA639 /* EGMGraphView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2CA99CB722B5832415585888 /* Charts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CE232E5D8C123B5333D261 /* Build configuration list for PBXNativeTarget "Charts" */;
+			buildPhases = (
+				B780C57EFFAA098BC0C12D70 /* Sources */,
+				8D0853D36475411431E68C90 /* Frameworks */,
+				539F29E7A2FA6A4339200FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Charts;
+			productName = Charts;
+			productReference = CFFD240E8858340637BD557C /* Charts.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5C4B26E1FEC4C84A9C97A57D /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C8993E1506E55BBDA93C71 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				1A90E7D912619B906215593A /* Sources */,
+				324C1BD3ECEE92EA63C56269 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E043F4A4446A66F10CC1F67 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = E77410C3A2061B121521D01C /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C1007A3333FE4B777D8F0A13 /* Pods-Charts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DB388CAE3C0C6D4C5EBA60 /* Build configuration list for PBXNativeTarget "Pods-Charts" */;
+			buildPhases = (
+				243F9B559A273A8553FE6D36 /* Sources */,
+				A1BB1602B71E2E09C3E62D44 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF45743B640E87205D1819CE /* PBXTargetDependency */,
+			);
+			name = "Pods-Charts";
+			productName = "Pods-Charts";
+			productReference = 4F209B17746AC938E91659B0 /* libPods-Charts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7C8E6DB1973FCD19D781DDF /* Pods-Charts-Charts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B5A3FDF70A29D51905F5998 /* Build configuration list for PBXNativeTarget "Pods-Charts-Charts" */;
+			buildPhases = (
+				3B63353EF3F18718AC50B0EB /* Sources */,
+				895078D0EA480A53792393F9 /* Frameworks */,
+				7F71641307120D37A396D6BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43D83A409300660934AA7E01 /* PBXTargetDependency */,
+			);
+			name = "Pods-Charts-Charts";
+			productName = "Pods-Charts-Charts";
+			productReference = 3F94F4752805658321C38D45 /* libPods-Charts-Charts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7EB9FA5625506AF9E0FE4FE /* Pods-Tests-Charts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413A1B6AAE496DD9EB3C378F /* Build configuration list for PBXNativeTarget "Pods-Tests-Charts" */;
+			buildPhases = (
+				45120CB70E12F87B5DF37E95 /* Sources */,
+				979F0DE978E6A6552470BDA8 /* Frameworks */,
+				B64C6B8C2AE510596DC2C492 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9C5CE728E5576E600E3B18C /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-Charts";
+			productName = "Pods-Tests-Charts";
+			productReference = 9A6ABEAB6B6F7E288D3940BE /* libPods-Tests-Charts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A5562126558F53805441E36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C4E12A8FA32EE2EC3DDCCAB4 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 468F9549A16EE6654DC14041;
+			productRefGroup = 606DB5C463B471A814EE21CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CA99CB722B5832415585888 /* Charts */,
+				C1007A3333FE4B777D8F0A13 /* Pods-Charts */,
+				C7C8E6DB1973FCD19D781DDF /* Pods-Charts-Charts */,
+				5C4B26E1FEC4C84A9C97A57D /* Pods-Tests */,
+				E7EB9FA5625506AF9E0FE4FE /* Pods-Tests-Charts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		539F29E7A2FA6A4339200FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A90E7D912619B906215593A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78024C0C841069CBA4031116 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243F9B559A273A8553FE6D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D823417D748652E79246430D /* Pods-Charts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B63353EF3F18718AC50B0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701CDC1295AD89A80883013B /* EGMDataPointSectionContainer.m in Sources */,
+				E02608D45C661400DA22A934 /* EGMDataPointsLineModel.m in Sources */,
+				6EE66635D1B84F5FEBF261C4 /* EGMDataPointsLineRenderer.m in Sources */,
+				3273689A0307028247D9183F /* EGMGraphAxisLabel.m in Sources */,
+				DE3C30992667D78367D77EBA /* EGMGraphAxisRenderer.m in Sources */,
+				DA60C624F8CDD65FD733E1F7 /* EGMGraphAxisValue.m in Sources */,
+				393E05257501F4B487C5347C /* EGMGraphAxisValueDate.m in Sources */,
+				D06DBA40F9B17B87371C555B /* EGMGraphAxisValueNumber.m in Sources */,
+				988F4DE469856CF197660E8F /* EGMGraphDataPoint.m in Sources */,
+				C6B6EB67E77A12BA46DE5405 /* EGMGraphDataPointBarRenderer.m in Sources */,
+				650D8CF1F13348FF23D9890B /* EGMGraphDataPointLineRenderer.m in Sources */,
+				13D085F0A3E133D57F1A0A83 /* EGMGraphDataPointRectRenderer.m in Sources */,
+				4AAF162AAAAFEE168F3CD3D0 /* EGMGraphDataPointRectTextRenderer.m in Sources */,
+				5BF43D53838EFB2A0CA42812 /* EGMGraphDataPointRectWithNoteTextRenderer.m in Sources */,
+				9B360650752B30C15CFE3426 /* EGMGraphDataPointRenderer.m in Sources */,
+				099FDE40C15C7E2F2DEF0DD7 /* EGMGraphDataPointTargetingRenderer.m in Sources */,
+				3987332E809DE430E6D4313D /* EGMGraphDataPointsManager.m in Sources */,
+				617FE8EB9AF01213B7D4B10B /* EGMGraphGuideRenderer.m in Sources */,
+				F2C6DB925B4995269511E605 /* EGMGraphGuidelineManager.m in Sources */,
+				962A8CA0ED25356193141F58 /* EGMGraphItemRenderer.m in Sources */,
+				B779760B5EF0AFFFC65C1254 /* EGMGraphItemsManager.m in Sources */,
+				B9F74F54CA656EA99EEEFFA7 /* EGMGraphLabelManager.m in Sources */,
+				D169A45D10F2E11D9B741EDE /* EGMGraphLabelRenderer.m in Sources */,
+				D4E8DE730FE6BF1DBE802DC4 /* EGMGraphLineManager.m in Sources */,
+				A0543447C019FE986A07AA5C /* EGMGraphLineRenderer.m in Sources */,
+				EB025E62F15F430B4ED7892C /* EGMGraphLineView.m in Sources */,
+				4E146040C436769316860F05 /* EGMGraphLinesManager.m in Sources */,
+				E40D1A85AE55C092D9F6CCC3 /* EGMGraphRectConflictSolver.m in Sources */,
+				F56DDC6206ECDB6A7A2A7990 /* EGMGraphUtils.m in Sources */,
+				BC3514F998904CA528DDE33D /* EGMGraphView.m in Sources */,
+				285ED024D8E8FD1E3448E453 /* Pods-Charts-Charts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45120CB70E12F87B5DF37E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371C8A4F8F0E16ED21436E69 /* EGMDataPointSectionContainer.m in Sources */,
+				534A3754152FCA835D18B5EE /* EGMDataPointsLineModel.m in Sources */,
+				5F1334655B5F8B193068E6B6 /* EGMDataPointsLineRenderer.m in Sources */,
+				7BA3C0576E4467A7DB8526E7 /* EGMGraphAxisLabel.m in Sources */,
+				E727B037EA9123926315F837 /* EGMGraphAxisRenderer.m in Sources */,
+				0A8EC98372DA5C6E77D882D5 /* EGMGraphAxisValue.m in Sources */,
+				124FA6AFB5D9D36216C1F08E /* EGMGraphAxisValueDate.m in Sources */,
+				E63A35FEF0C6E1BD08E02246 /* EGMGraphAxisValueNumber.m in Sources */,
+				D3F036D3B8CF5CCF7407FBC4 /* EGMGraphDataPoint.m in Sources */,
+				1518670D259696EF02F28965 /* EGMGraphDataPointBarRenderer.m in Sources */,
+				AD839E3046A03FDC710E2353 /* EGMGraphDataPointLineRenderer.m in Sources */,
+				5285B45D00717929A06FB96D /* EGMGraphDataPointRectRenderer.m in Sources */,
+				A14618DE3A8B6F84842EAAA7 /* EGMGraphDataPointRectTextRenderer.m in Sources */,
+				7B1E138D30092A35F57F1617 /* EGMGraphDataPointRectWithNoteTextRenderer.m in Sources */,
+				D62BB58A798CFB83BE42F6BE /* EGMGraphDataPointRenderer.m in Sources */,
+				0FA1C4C653E632B5EBF60AF7 /* EGMGraphDataPointTargetingRenderer.m in Sources */,
+				63C8C47FAC48721D25EC8ED0 /* EGMGraphDataPointsManager.m in Sources */,
+				69DB68AD6A662D1994FEC0FF /* EGMGraphGuideRenderer.m in Sources */,
+				18E41E9BE1831201DC071812 /* EGMGraphGuidelineManager.m in Sources */,
+				80AAFAF0361BEE5F406B4B15 /* EGMGraphItemRenderer.m in Sources */,
+				3BC47345826FFC7E69B9E078 /* EGMGraphItemsManager.m in Sources */,
+				16DDCFA7A6A8E40E4B6D136C /* EGMGraphLabelManager.m in Sources */,
+				5CAD841DB656B0D6496030F3 /* EGMGraphLabelRenderer.m in Sources */,
+				FADBD41CC1B6AE12F2D419DD /* EGMGraphLineManager.m in Sources */,
+				C64327C20D478A99271826EF /* EGMGraphLineRenderer.m in Sources */,
+				5A1AB83F6488A5AF4BADAB41 /* EGMGraphLineView.m in Sources */,
+				0414D3D59847BB14B55B9CF0 /* EGMGraphLinesManager.m in Sources */,
+				67C16E7F4C6358F3EE2F4C98 /* EGMGraphRectConflictSolver.m in Sources */,
+				3EF27B89EE365081952BEEB0 /* EGMGraphUtils.m in Sources */,
+				C25197737FF6DB55DB1E0CCE /* EGMGraphView.m in Sources */,
+				087A54BE26B2FEB4085F7BD7 /* Pods-Tests-Charts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780C57EFFAA098BC0C12D70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43D83A409300660934AA7E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			target = 2CA99CB722B5832415585888 /* Charts */;
+			targetProxy = 5DD9FE278EEFBF3A590A3D88 /* PBXContainerItemProxy */;
+		};
+		4E043F4A4446A66F10CC1F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-Charts";
+			target = E7EB9FA5625506AF9E0FE4FE /* Pods-Tests-Charts */;
+			targetProxy = CD586C995DCF7F56325FCA6A /* PBXContainerItemProxy */;
+		};
+		B9C5CE728E5576E600E3B18C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			target = 2CA99CB722B5832415585888 /* Charts */;
+			targetProxy = 7768D412D0880EDD30170393 /* PBXContainerItemProxy */;
+		};
+		EF45743B640E87205D1819CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Charts-Charts";
+			target = C7C8E6DB1973FCD19D781DDF /* Pods-Charts-Charts */;
+			targetProxy = EEE3724AFF26E6D0FA7405E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05F98A114CFDBAA88CBE0EB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1F322653D249DB68100492EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCF9581829A5A6BDB4C7006 /* Pods-Charts-Charts-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Charts-Charts/Pods-Charts-Charts-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		38C7452882026FB7701C1616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		52B47F98A77236FDE13E0E1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5445463CFF0BFBF20E14F54D /* Pods-Tests-Charts-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Charts/Pods-Tests-Charts-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B2611BD16B495147E6054BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBFC192E8A8C2FDB94F5447 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63ADAA724CC3714DEFB36E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64D8A307525C196BC1169254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEAADA5BFE6F9F5D117785F /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BF15740085050C6B71A2125B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5445463CFF0BFBF20E14F54D /* Pods-Tests-Charts-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Charts/Pods-Tests-Charts-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C32C14BD9CDADC69D6E254D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCF9581829A5A6BDB4C7006 /* Pods-Charts-Charts-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Charts-Charts/Pods-Charts-Charts-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBFC049A506A796A442B4EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 666FA76C7B34E6417B2AA3B6 /* Pods-Charts.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DD6409DE670D06F66B95E594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DDA46B97AD99596AD4225D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A201E7D63A8D574CEF2B4D52 /* Pods-Charts.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C8993E1506E55BBDA93C71 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D8A307525C196BC1169254 /* Debug */,
+				5B2611BD16B495147E6054BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CE232E5D8C123B5333D261 /* Build configuration list for PBXNativeTarget "Charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38C7452882026FB7701C1616 /* Debug */,
+				DD6409DE670D06F66B95E594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413A1B6AAE496DD9EB3C378F /* Build configuration list for PBXNativeTarget "Pods-Tests-Charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF15740085050C6B71A2125B /* Debug */,
+				52B47F98A77236FDE13E0E1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B5A3FDF70A29D51905F5998 /* Build configuration list for PBXNativeTarget "Pods-Charts-Charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F322653D249DB68100492EB /* Debug */,
+				C32C14BD9CDADC69D6E254D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DB388CAE3C0C6D4C5EBA60 /* Build configuration list for PBXNativeTarget "Pods-Charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFC049A506A796A442B4EC4 /* Debug */,
+				DDA46B97AD99596AD4225D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E12A8FA32EE2EC3DDCCAB4 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F98A114CFDBAA88CBE0EB5 /* Debug */,
+				63ADAA724CC3714DEFB36E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A5562126558F53805441E36 /* Project object */;
+}

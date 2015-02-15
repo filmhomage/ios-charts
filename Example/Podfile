@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Charts', :exclusive => true do
+  pod "Charts", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "Charts", :path => "../"
+
+  
+end

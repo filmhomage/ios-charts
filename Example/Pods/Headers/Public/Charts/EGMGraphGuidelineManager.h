@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/renderer/manager/EGMGraphGuidelineManager.h

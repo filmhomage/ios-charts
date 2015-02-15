@@ -1,0 +1,14 @@
+PODS:
+  - Charts (0.1.0)
+
+DEPENDENCIES:
+  - Charts (from `../`)
+
+EXTERNAL SOURCES:
+  Charts:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Charts: 52d2dfacef3ef5d1ce2552aed20baed09cc5da28
+
+COCOAPODS: 0.35.0
