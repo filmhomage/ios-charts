@@ -1,6 +1,6 @@
 # Charts
 
-[![CI Status](http://img.shields.io/travis/ischuetz/Charts.svg?style=flat)](https://travis-ci.org/ischuetz/Charts)
+[![CI Status](http://img.shields.io/travis/egymgmbh/ios-charts.svg?style=flat)](https://travis-ci.org/egymgmbh/ios-charts)
 [![Version](https://img.shields.io/cocoapods/v/Charts.svg?style=flat)](http://cocoadocs.org/docsets/Charts)
 [![License](https://img.shields.io/cocoapods/l/Charts.svg?style=flat)](http://cocoadocs.org/docsets/Charts)
 [![Platform](https://img.shields.io/cocoapods/p/Charts.svg?style=flat)](http://cocoadocs.org/docsets/Charts)
