@@ -31,9 +31,9 @@
     for (int i = 0; i < [dataPoints count]; i++) {
         EGMGraphDataPoint *dataPoint = dataPoints[i];
         
-        CGFloat dataPointScalarX = [[dataPoint getXValue] getScalar];
-        CGFloat dataPointScalarY = [[dataPoint getYValue] getScalar];
-
+        CGFloat dataPointScalarX = [dataPoint getXValue].scalar;
+        CGFloat dataPointScalarY = [dataPoint getYValue].scalar;
+        
         CGFloat dataPointRectX = [xAxis getPXPositionScalar:dataPointScalarX];
         CGFloat dataPointRectY = [yAxis getPXPositionScalar:dataPointScalarY];
         
@@ -46,7 +46,7 @@
             [dataPointRenderers addObject:dataPointRenderer];
         }
     }
-
+    
     if (dataPointRenderers.count && ([[dataPointRenderers.firstObject class] isSubclassOfClass: [EGMGraphDataPointRectRenderer class]] || [[dataPointRenderers.firstObject class] isSubclassOfClass: [EGMGraphDataPointRectWithNoteTextRenderer class]])) {
         [[[EGMGraphRectConflictSolver alloc] init] solveConflictsForDataPointRenderers:dataPointRenderers];
     }
@@ -77,7 +77,7 @@
                         CGFloat minSpaceBetweenCenters = height + self.minYSpacing;
                         CGFloat currentSpacingBetweenCenters = abs(dp2.pointPx.y - dp1.pointPx.y);
                         maxScalingFactor = minSpaceBetweenCenters / currentSpacingBetweenCenters;
-
+                        
                     }
                 }
             }

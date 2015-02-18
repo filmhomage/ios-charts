@@ -32,7 +32,7 @@
     return self;
 }
 
-- (NSArray *)getLabels {
+- (NSArray *)labels {
     
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setLocale:[NSLocale currentLocale]];
@@ -44,7 +44,7 @@
     return [NSArray arrayWithObjects: graphAxisLabel, nil];
 }
 
-- (CGFloat)getScalar {
+- (CGFloat)scalar {
     return self.number;
 }
 
@@ -56,7 +56,7 @@
 - (EGMGraphAxisValue *)clone {
     EGMGraphAxisValueNumber * clone = [[EGMGraphAxisValueNumber alloc] init];
     clone.decimals = self.decimals;
-    [clone setScalar: [self getScalar]];
+    clone.scalar = self.scalar;
     return clone;
 }
 

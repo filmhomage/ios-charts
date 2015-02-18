@@ -17,10 +17,10 @@
     NSMutableDictionary *xIndexDict = [[NSMutableDictionary alloc] init];
     for (NSInteger itemIndex = 0; itemIndex < dataPointRenderers.count; itemIndex++) {
         EGMGraphDataPointRenderer *item = dataPointRenderers[itemIndex];
-        NSMutableArray *sameXItems = [xIndexDict objectForKey:@([[item.dataPoint getXValue] getInternalScalar])];
+        NSMutableArray *sameXItems = [xIndexDict objectForKey:@([item.dataPoint getXValue].internalScalar)];
         if (!sameXItems) {
             sameXItems = [[NSMutableArray alloc] init];
-            [xIndexDict setObject:sameXItems forKey:@([[item.dataPoint getXValue] getInternalScalar])];
+            [xIndexDict setObject:sameXItems forKey:@([item.dataPoint getXValue].internalScalar)];
         }
         [sameXItems addObject:item];
     }

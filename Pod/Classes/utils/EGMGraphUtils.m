@@ -21,8 +21,8 @@
     
     EGMGraphAxisValue *firstAxisValue = [axisValuesX objectAtIndex:0];
     EGMGraphAxisValue *lastAxisValue = [axisValuesX objectAtIndex:(axisValuesX.count - 1)];
-
-    return [lastAxisValue getScalar] - [firstAxisValue getScalar];
+    
+    return lastAxisValue.scalar - firstAxisValue.scalar;
 }
 
 + (CGFloat)getModelAxisLengthY:(NSArray *)axisValuesY {
@@ -34,7 +34,7 @@
     EGMGraphAxisValue *firstAxisValue = [axisValuesY objectAtIndex:0];
     EGMGraphAxisValue *lastAxisValue = [axisValuesY objectAtIndex:(axisValuesY.count - 1)];
     
-    return [lastAxisValue getScalar] - [firstAxisValue getScalar];
+    return lastAxisValue.scalar - firstAxisValue.scalar;
 }
 
 + (CGFloat)getPXPositionForYAxisScalar:(CGFloat)scalar yAxis:(EGMGraphAxisRenderer *)yAxis yAxisValues:(NSArray *)yAxisValues graph:(EGMGraphView *)graph {
@@ -46,7 +46,7 @@
     CGFloat offsetAxisYPx = viewHeight - [yAxis getOrigin].y;
     
     EGMGraphAxisValue *firstAxisValue = [yAxisValues objectAtIndex:0];
-    CGFloat start = [firstAxisValue getScalar];
+    CGFloat start = firstAxisValue.scalar;
     CGFloat scalarOriginOffet = scalar - start;
     
     CGFloat result = viewHeight - (((scalarOriginOffet * axisLengthYPx) / modelLengthY) + offsetAxisYPx);
@@ -59,7 +59,7 @@
     CGFloat offsetAxisXPx = [xAxis getOrigin].x;
     
     EGMGraphAxisValue *firstAxisValue = [xAxisValues objectAtIndex:0];
-    CGFloat start = [firstAxisValue getScalar];
+    CGFloat start = firstAxisValue.scalar;
     CGFloat scalarOriginOffet = scalar - start;
     
     CGFloat result = ((scalarOriginOffet * axisLengthXPx) / modelLengthX) + offsetAxisXPx;
@@ -84,7 +84,7 @@
 + (NSString *)getStringFromNumber: (CGFloat)number maxDigitsAfterDecimal:(NSInteger)maxDigitsAfterDecimal {
     NSNumberFormatter * nf = [[NSNumberFormatter alloc] init];
     [nf setMaximumFractionDigits:maxDigitsAfterDecimal];
-//    [nf setPaddingCharacter:@"0"];
+    //    [nf setPaddingCharacter:@"0"];
     NSString *str = [nf stringFromNumber:[NSNumber numberWithFloat:number]];
     return str;
 }
@@ -133,7 +133,7 @@
         // TODO review this and the names/functionality of getMaxLabelWidth/getMaxLabelHeight, there's something weird - is it consistent, is naming correct, shouldnt we use getRenderedTextSizeForVerticalStringArray or equivalent for both, maybe we can use only one generic method, etc?
         // for now this is used because we assume we are calculating height of x-axis labels here
         
-        NSArray *axisStringsArray = [self axisLabelstoStringsArray:[axisValue getLabels]];
+        NSArray *axisStringsArray = [self axisLabelstoStringsArray: axisValue.labels];
         
         CGSize labelSize = [self getRenderedTextSizeForVerticalStringArray:axisStringsArray fontAttributes:fontAttributes spacing:spacing];
         

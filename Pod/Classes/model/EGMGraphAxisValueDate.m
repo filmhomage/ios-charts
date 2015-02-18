@@ -30,14 +30,14 @@
     return self;
 }
 
-- (NSArray *)getLabels {
+- (NSArray *)labels {
     NSString *formatted = [self.formatter stringFromDate:self.realDate];
     EGMGraphAxisLabel *graphAxisLabel = [[EGMGraphAxisLabel alloc] initWithText:formatted color:[UIColor blackColor] font:[UIFont systemFontOfSize:14]];
     graphAxisLabel.hidden = self.isHidden;
     return [NSArray arrayWithObjects: graphAxisLabel, nil];
 }
 
-- (CGFloat)getScalar {
+- (CGFloat)scalar {
     // TODO generic
     if (self.internalDate) {
         return [self.internalDate timeIntervalSince1970];
@@ -59,14 +59,14 @@
     if (self.internalDate) {
         internalScalar = [self.internalDate timeIntervalSince1970];
     } else {
-        internalScalar = [self getScalar];
+        internalScalar = [self scalar];
     }
     return internalScalar;
 }
 
 - (EGMGraphAxisValue *)clone {
     EGMGraphAxisValueDate * clone = [[EGMGraphAxisValueDate alloc] init];
-    [clone setScalar: [self getScalar]];
+    [clone setScalar: [self scalar]];
     clone.formatter = self.formatter;
     clone.date = self.date;
     return clone;

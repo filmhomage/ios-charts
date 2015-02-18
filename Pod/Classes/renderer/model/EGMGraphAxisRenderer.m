@@ -78,7 +78,7 @@ CGFloat const dividerStrokeWidth = 2.0;
     self.verticalDefinitionLabels = verticalDefinitionLabels;
     
     self.dividerLength = dividerLength;
-
+    
     self.labelsFont = labelsFont;
     self.labelsFontColor = labelsFontColor;
     
@@ -89,11 +89,11 @@ CGFloat const dividerStrokeWidth = 2.0;
     self.labelsMaxHeight = [EGMGraphUtils getMaxLabelHeight:self.axisValues fontAttributes:labelsFontAttributes verticalLabels:self.verticalLabels spacing:self.spacingLabelBetweenAxis];
     
     self.graphView = graphView;
-
+    
     self.spacingLabelAxis = spacingLabelAxis;
     self.spacingLabelBetweenAxis = spacingLabelBetweenAxis;
     self.lineColor = color;
-
+    
     self.definitionLabels = definitionLabels;
     self.axisLabelFont = axisLabelFont;
     self.axisLabelFontColor = axisLabelFontColor;
@@ -103,7 +103,7 @@ CGFloat const dividerStrokeWidth = 2.0;
 
 /**
  Set points and init derived data
-*/
+ */
 - (void)initLineAndDerived:(CGPoint)p1 p2:(CGPoint)p2 {
     [self.lineRenderer setP1:p1 p2:p2 color:self.lineColor];
     
@@ -124,7 +124,7 @@ CGFloat const dividerStrokeWidth = 2.0;
 
 - (NSArray *)generateDefinitionLabelRenderersForDefinitionLabels:(NSArray *)definitionLabels spacingLabelBetweenAxis:(CGFloat)spacingLabelBetweenAxis {
     NSArray *axisLabelRenderers;
-
+    
     if ([self isHorizontal]) {
         if (self.verticalDefinitionLabels) {
             if (definitionLabels.count > 1) {
@@ -139,11 +139,11 @@ CGFloat const dividerStrokeWidth = 2.0;
             CGPoint labelPoint = CGPointMake(self.endPoint.x + 20, self.endPoint.y);
             axisLabelRenderer.pointPx = labelPoint;
             axisLabelRenderers = [NSArray arrayWithObjects:axisLabelRenderer, nil];
-
+            
         } else {
             axisLabelRenderers = [self generateXDefinitionLabelRenderers:definitionLabels spacingLabelAxisX:self.spacingLabelAxis fontAttributes:[EGMGraphUtils getLabelStringAttributesForFont:self.labelsFont color:self.labelsFontColor] spacingLabelBetweenAxis:spacingLabelBetweenAxis];
         }
-
+        
     } else { // vertical axis
         if (definitionLabels.count > 1) {
             NSLog(@"WARNING: No support for  multiple labels - using only first one");
@@ -173,7 +173,7 @@ CGFloat const dividerStrokeWidth = 2.0;
 }
 
 - (CGFloat)getModelLength {
-
+    
     NSArray *axisValues = self.axisValues;
     
     if (!axisValues || axisValues.count == 0) {
@@ -183,7 +183,7 @@ CGFloat const dividerStrokeWidth = 2.0;
     EGMGraphAxisValue *firstAxisValue = [axisValues objectAtIndex:0];
     EGMGraphAxisValue *lastAxisValue = [axisValues objectAtIndex:(axisValues.count - 1)];
     
-    return fabsf([lastAxisValue getScalar] - [firstAxisValue getScalar]);
+    return fabsf(lastAxisValue.scalar - firstAxisValue.scalar);
 }
 
 - (void)initLabelsAndDividers:(EGMGraphView *)graphView spacingLabelsAxis:(CGFloat)spacingLabelsAxis spacingLabelBetweenAxis:(CGFloat)spacingLabelBetweenAxis fontAttributes:(NSDictionary *)fontAttributes verticalLabels:(BOOL)verticalLabels {
@@ -196,7 +196,7 @@ CGFloat const dividerStrokeWidth = 2.0;
     NSMutableArray *labels;
     
     NSArray *definitionLabelRenderers = [self generateDefinitionLabelRenderersForDefinitionLabels:self.definitionLabels spacingLabelBetweenAxis:spacingLabelBetweenAxis];
-
+    
     if ([self isHorizontal]) {
         dividers = [self generateXDividers:graphView modelLength:modelLength];
         labels = [self generateXLabelRenderers:graphView modelLength:modelLength spacingLabelAxisX:spacingLabelsAxis spacingLabelBetweenAxis:spacingLabelBetweenAxis fontAttributes:fontAttributes verticalLabels: verticalLabels];
@@ -237,16 +237,16 @@ CGFloat const dividerStrokeWidth = 2.0;
     NSMutableArray * axisValues = [NSMutableArray array];
     
     NSArray *sortedDataPoints = [dataPoints sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        CGFloat first = [((EGMGraphAxisValue *)[(EGMGraphDataPoint*)a getXValue]) getScalar];
-        CGFloat second = [((EGMGraphAxisValue *)[(EGMGraphDataPoint*)b getXValue]) getScalar];
+        CGFloat first = ((EGMGraphAxisValue *)[(EGMGraphDataPoint*)a getXValue]).scalar;
+        CGFloat second = ((EGMGraphAxisValue *)[(EGMGraphDataPoint*)b getXValue]).scalar;
         return [[NSNumber numberWithDouble:first] compare:[NSNumber numberWithDouble:second]];
     }];
     
     EGMGraphDataPoint *first = sortedDataPoints[0];
     EGMGraphDataPoint *last = sortedDataPoints[[dataPoints count] - 1];
     
-    CGFloat lastDataPointScalar = [((EGMGraphAxisValue *)[last getXValue]) getScalar];
-    CGFloat firstDataPointScalar = [((EGMGraphAxisValue *)[first getXValue]) getScalar];
+    CGFloat lastDataPointScalar = ((EGMGraphAxisValue *)[last getXValue]).scalar;
+    CGFloat firstDataPointScalar = ((EGMGraphAxisValue *)[first getXValue]).scalar;
     
     firstDataPointScalar = round_down(firstDataPointScalar, multiple);
     CGFloat offset = firstDataPointScalar;
@@ -299,8 +299,8 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     
     CGFloat axisLengthPx = [self length];
     CGFloat axisLengthModel = [self getModelLength];
-    CGFloat originModel = [self.axisValues[0] getScalar];
-
+    CGFloat originModel = ((EGMGraphAxisValue *)self.axisValues[0]).scalar;
+    
     CGFloat originPx;
     if ([self isHorizontal]) {
         originPx = [self getOrigin].x;
@@ -334,35 +334,35 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     NSMutableArray * axisValues = [NSMutableArray array];
     
     NSArray *sortedDataPoints = [dataPoints sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        CGFloat first = [((EGMGraphAxisValue *)[(EGMGraphDataPoint*)a getYValue]) getScalar];
-        CGFloat second = [((EGMGraphAxisValue *)[(EGMGraphDataPoint*)b getYValue]) getScalar];
+        CGFloat first = ((EGMGraphAxisValue *)[(EGMGraphDataPoint*)a getYValue]).scalar;
+        CGFloat second = ((EGMGraphAxisValue *)[(EGMGraphDataPoint*)b getYValue]).scalar;
         return [[NSNumber numberWithDouble:first] compare:[NSNumber numberWithDouble:second]];
     }];
     
     EGMGraphDataPoint *first = sortedDataPoints[0];
     EGMGraphDataPoint *last = sortedDataPoints[[dataPoints count] - 1];
     
-    CGFloat lastDataPointScalar = [((EGMGraphAxisValue *)[last getYValue]) getScalar];
-    CGFloat firstDataPointScalar = [((EGMGraphAxisValue *)[first getYValue]) getScalar];
+    CGFloat lastDataPointScalar = ((EGMGraphAxisValue *)[last getYValue]).scalar;
+    CGFloat firstDataPointScalar = ((EGMGraphAxisValue *)[first getYValue]).scalar;
     
     
     CGFloat firstValue = ((NSInteger)(firstDataPointScalar)) - (((NSInteger)(firstDataPointScalar)) % multiple);
     CGFloat lastValue = ((NSInteger)(lastDataPointScalar)) + (multiple - (((NSInteger)(lastDataPointScalar)) % multiple));
-
+    
     CGFloat segmentSize = multiple;
-
+    
     if (firstValue == firstDataPointScalar && addPaddingSegmentIfEdge) {
         firstValue = firstValue - segmentSize;
     }
     if (lastValue == lastDataPointScalar && addPaddingSegmentIfEdge) {
         lastValue = lastValue + segmentSize;
     }
-
+    
     CGFloat currentMultiple = multiple;
     CGFloat distance = lastValue - firstValue;
-
+    
     CGFloat segmentCount = distance / currentMultiple;
-
+    
     // make larger segments if we have to many segments
     while (segmentCount > maxSegmentCount) {
         currentMultiple *= 2;
@@ -379,7 +379,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     segmentSize = currentMultiple;
     
     CGFloat offset = firstValue;
-
+    
     for (int i = 0; i <= segmentCount; i++) {
         CGFloat scalar = offset + (i * segmentSize);
         EGMGraphAxisValue *axisValue = axisValueGenerator(scalar);
@@ -410,7 +410,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     if ([self isHorizontal]) {
         p1 = self.lineRenderer.p1;
         p2 = CGPointMake(self.lineRenderer.p2.x * factor, self.lineRenderer.p2.y);
-
+        
     } else {
         p1 = CGPointMake(self.lineRenderer.p1.x, self.lineRenderer.p1.y * factor);
         p2 = self.lineRenderer.p2;
@@ -484,7 +484,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     NSMutableArray *dividers = [NSMutableArray array];
     
     for (EGMGraphAxisValue *axisValue in self.axisValues) {
-        CGFloat scalar = [axisValue getScalar];
+        CGFloat scalar = axisValue.scalar;
         
         CGFloat scalarPXPos = [self getPXPositionForXAxisScalar:scalar graph:graphView modelLengthX:modelLength];
         
@@ -510,7 +510,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     NSMutableArray *dividers = [NSMutableArray array];
     
     for (EGMGraphAxisValue *axisValue in self.axisValues) {
-        CGFloat scalar = [axisValue getScalar];
+        CGFloat scalar = axisValue.scalar;
         
         CGFloat scalarPXPos = [self getPXPositionForYAxisScalar:scalar graph:graph modelLengthY:modelLength];
         
@@ -540,7 +540,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     NSMutableArray *labels = [NSMutableArray array];
     
     for (EGMGraphAxisValue *axisValue in self.axisValues) {
-        CGFloat scalar = [axisValue getScalar];
+        CGFloat scalar = axisValue.scalar;
         
         CGFloat y = [self getPXPositionForYAxisScalar:scalar graph:graph modelLengthY:modelLength];
         
@@ -571,7 +571,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     }
     
     NSArray *rowHeights = [self rowHeightsForRows:rows fontAttributes:fontAttributes verticalLabels:self.verticalLabels];
-
+    
     for (int i = 0; i < labels.count; i++) {
         EGMGraphAxisLabel *axisLabel = labels[i];
         
@@ -584,7 +584,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
         CGFloat labelX = x - labelSize.width; // align at the right
         
         EGMGraphLabelRenderer *labelRenderer = [[EGMGraphLabelRenderer alloc] init];
-
+        
         labelRenderer.text = axisLabel.text;
         labelRenderer.pointPx = CGPointMake(labelX, y);
         labelRenderer.hidden = axisLabel.hidden;
@@ -606,7 +606,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     NSUInteger count = 0;
     for (EGMGraphAxisValue *axisValue in self.axisValues) {
         if (![axisValue isHidden]) { // exclude possible padding values from check TODO isHidden should not be assumed to be always == padding, maybe add extra flag for padding
-            NSUInteger c = [axisValue getLabels].count;
+            NSUInteger c = axisValue.labels.count;
             if (count != 0) {
                 assert(count == c);
             }
@@ -619,7 +619,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     for (int rowIndex = 0; rowIndex < count; rowIndex++) {
         NSMutableArray *row = [NSMutableArray array];
         for (EGMGraphAxisValue *axisValue in self.axisValues) {
-            NSArray *axisLabels = [axisValue getLabels];
+            NSArray *axisLabels = axisValue.labels;
             if (rowIndex < axisLabels.count) {
                 EGMGraphAxisLabel *axisLabel = [axisLabels objectAtIndex:rowIndex];
                 [row addObject:axisLabel.text]; // only strings, this (+global fontAttributes) is what we need to calculate height
@@ -629,10 +629,10 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     }
     
     NSArray *rowHeights = [self rowHeightsForRows:rows fontAttributes:fontAttributes verticalLabels:self.verticalLabels];
-
+    
     for (EGMGraphAxisValue *axisValue in self.axisValues) {
-        CGFloat scalar = [axisValue getScalar];
-        NSArray *labels = [axisValue getLabels];
+        CGFloat scalar = axisValue.scalar;
+        NSArray *labels = axisValue.labels;
         
         // render vertical labels for each axis value
         for (int i = 0; i < labels.count; i++) {
@@ -655,7 +655,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
             labelRenderer.hidden = axisLabel.hidden;
             labelRenderer.font = self.labelsFont;
             labelRenderer.fontColor = axisLabel.color;
-
+            
             [labelRenderers addObject:labelRenderer];
         }
     }
@@ -701,7 +701,7 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     CGFloat offsetAxisYPx = viewHeight - [self getOrigin].y - [self axisStartPaddingPx];;
     
     EGMGraphAxisValue *firstAxisValue = [self.axisValues objectAtIndex:0];
-    CGFloat start = [firstAxisValue getScalar];
+    CGFloat start = firstAxisValue.scalar;
     CGFloat scalarOriginOffet = scalar - start;
     
     CGFloat result = viewHeight - (((scalarOriginOffet * axisLengthYPx) / modelLengthY) + offsetAxisYPx);
@@ -715,11 +715,11 @@ CGFloat round_down(NSInteger num, NSInteger factor) {
     CGFloat offsetAxisXPx = [self getOrigin].x + [self axisStartPaddingPx];
     
     EGMGraphAxisValue *firstAxisValue = [self.axisValues objectAtIndex:0];
-    CGFloat start = [firstAxisValue getScalar];
+    CGFloat start = firstAxisValue.scalar;
     CGFloat scalarOriginOffet = scalar - start;
     
     CGFloat result = ((scalarOriginOffet * axisLengthXPx) / modelLengthX) + offsetAxisXPx;
-
+    
     return result;
 }
 
