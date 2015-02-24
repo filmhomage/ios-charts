@@ -118,30 +118,6 @@
         dataPointsManager.itemsRenderers = dataPointsRenderers;
     }
 
-    ///////////////////////////////////////////////////////////////////////////////
-//    //alternative way to solve conflicts - scale y axis
-//    
-//    CGFloat maxScalingFactorAll = FLT_MIN;
-//    for (EGMGraphDataPointsManager *dataPointsManager in self.dataPointsManagers) {
-//        CGFloat maxScalingFactor = [dataPointsManager getScalingFactorForMaxIntersection];
-//        if (maxScalingFactor > maxScalingFactorAll) {
-//            maxScalingFactorAll = maxScalingFactor;
-//        }
-//    }
-//    if (!solvedConflicts && maxScalingFactorAll != FLT_MIN) {
-//        //scale y axis such that conflict is gone
-//        CGFloat prev = self.yAxisRenderer.length;
-//        [self.yAxisRenderer scale:maxScalingFactorAll];
-//        CGFloat after = self.yAxisRenderer.length;
-//            
-//        //now we have a new origin, relayout things
-//        [self onUpdatedYAxis:self.yAxisRenderer labelsFontAttributes:labelsFontAttributes solvedConflicts:YES];
-//
-//        //resize graph frame
-//        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height + after - prev);
-//        self.resizeBlock(CGSizeMake(self.frame.size.width, self.frame.size.height));
-//    }
-
     for (EGMGraphDataPointsManager *dataPointsManager in self.dataPointsManagers) {
         [dataPointsManager onAddOverlays:self];
     }

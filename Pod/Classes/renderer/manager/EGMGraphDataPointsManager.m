@@ -54,39 +54,6 @@
     return dataPointRenderers;
 }
 
-- (CGFloat)getScalingFactorForMaxIntersection {
-    CGFloat maxIntersectionHeight = FLT_MIN;
-    CGFloat maxScalingFactor = FLT_MIN;
-    for (EGMGraphItemRenderer *dp1 in self.itemsRenderers) {
-        for (EGMGraphItemRenderer *dp2 in self.itemsRenderers) {
-            if (![dp1 isEqual: dp2]) { //TODO override isEqual in EGMGraphItemRenderer - for now instance identity check is correct
-                
-                CGRect dp1Rect = [dp1 getRect];
-                CGRect dp1RectWithMinYSpacing = CGRectInset(dp1Rect, 0, -self.minYSpacing);
-                CGRect dp2Rect = [dp2 getRect];
-                CGRect dp2RectWithMinYSpacing = CGRectInset(dp2Rect, 0, -self.minYSpacing);
-                
-                CGRect intersection = [EGMGraphUtils intersection:dp1RectWithMinYSpacing r2:dp2RectWithMinYSpacing];
-                if (!CGRectIsNull(intersection)) {
-                    
-                    CGFloat intersectionHeight = intersection.size.height;
-                    if (intersectionHeight > maxIntersectionHeight) {
-                        maxIntersectionHeight = intersectionHeight;
-                        
-                        CGFloat height = [dp1 getRect].size.height;
-                        CGFloat minSpaceBetweenCenters = height + self.minYSpacing;
-                        CGFloat currentSpacingBetweenCenters = abs(dp2.pointPx.y - dp1.pointPx.y);
-                        maxScalingFactor = minSpaceBetweenCenters / currentSpacingBetweenCenters;
-                        
-                    }
-                }
-            }
-        }
-    }
-    return maxScalingFactor;
-}
-
-
 - (instancetype)initWithDataPoints:(NSArray *)dataPoints dataPointRendererGenerator:(EGMGraphDataPointRenderer *(^)(CGPoint, EGMGraphDataPoint *, NSInteger, CGPoint, EGMGraphView *))dataPointRendererGenerator minYSpacing:(CGFloat)minYSpacing {
     self = [super init];
     if (self) {

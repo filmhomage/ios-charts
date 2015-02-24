@@ -35,7 +35,5 @@
 - (NSArray *)generateDataPointRenderers:(NSArray *)dataPoints xAxis:(EGMGraphAxisRenderer *)xAxis yAxis:(EGMGraphAxisRenderer *)yAxis xAxisValues:(NSArray *)xAxisValues
                          yAxisValues:(NSArray *)yAxisValues graph:(EGMGraphView *)graph;
 
-- (CGFloat)getScalingFactorForMaxIntersection;
-
 
 @end
