@@ -12,8 +12,6 @@
 @interface EGMGraphAxisValueDate()
 
 @property (nonatomic, strong) NSDateFormatter* formatter;
-@property (nonatomic, strong) NSDate *internalDate; //TODO generic, move to superclass as scalar. we shouldnt need this here
-@property (nonatomic, strong) NSDate *realDate;
 
 @end
 
@@ -22,53 +20,31 @@
 - (instancetype)initWithDate: (NSDate *)date formatter: (NSDateFormatter *) formatter {
     self = [super init];
     if (self) {
-        self.date = date;
+        self.scalar = [self scalarFromDate:date];
         self.formatter = formatter;
-        
-        self.realDate = date;
     }
     return self;
 }
 
 - (NSArray *)labels {
-    NSString *formatted = [self.formatter stringFromDate:self.realDate];
+    NSString *formatted = [self.formatter stringFromDate:self.date];
     EGMGraphAxisLabel *graphAxisLabel = [[EGMGraphAxisLabel alloc] initWithText:formatted color:[UIColor blackColor] font:[UIFont systemFontOfSize:14]];
     graphAxisLabel.hidden = self.isHidden;
     return [NSArray arrayWithObjects: graphAxisLabel, nil];
 }
 
-- (CGFloat)scalar {
-    // TODO generic
-    if (self.internalDate) {
-        return [self.internalDate timeIntervalSince1970];
-    } else {
-        return [self.realDate timeIntervalSince1970];
-    }
+- (CGFloat)scalarFromDate:(NSDate *)date {
+    return [date timeIntervalSince1970];
 }
 
-- (void)setScalar:(CGFloat)scalar {
-    self.date = [NSDate dateWithTimeIntervalSince1970:scalar];
-}
-
-- (void)setInternalScalar:(CGFloat)scalar {
-    self.internalDate = [NSDate dateWithTimeIntervalSince1970:scalar];
-}
-
-- (CGFloat)getInternalScalar:(CGFloat)scalar {
-    CGFloat internalScalar;
-    if (self.internalDate) {
-        internalScalar = [self.internalDate timeIntervalSince1970];
-    } else {
-        internalScalar = [self scalar];
-    }
-    return internalScalar;
+- (NSDate *)date {
+    return [NSDate dateWithTimeIntervalSince1970: self.scalar];
 }
 
 - (EGMGraphAxisValue *)clone {
     EGMGraphAxisValueDate * clone = [[EGMGraphAxisValueDate alloc] init];
-    [clone setScalar: [self scalar]];
+    clone.scalar = self.scalar;
     clone.formatter = self.formatter;
-    clone.date = self.date;
     return clone;
 }
 

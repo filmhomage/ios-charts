@@ -11,7 +11,7 @@
 
 @interface EGMGraphAxisValueDate : EGMGraphAxisValue
 
-@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong, readonly) NSDate *date;
 
 - (instancetype)initWithDate: (NSDate *)date formatter: (NSDateFormatter *) formatter;
 

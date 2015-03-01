@@ -15,20 +15,15 @@
 
 @implementation EGMGraphAxisValue
 
-- (void)setScalar:(CGFloat)scalar {
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                                 userInfo:nil];
-}
+
+@synthesize scalar = _scalar;
 
 - (CGFloat)scalar {
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                                 userInfo:nil];
-}
-
-- (CGFloat)getInternalScalar {
-    return self.scalar;
+    if (self.internalScalar) {
+        return self.internalScalar;
+    } else {
+        return _scalar;
+    }
 }
 
 - (void)setLabels:(NSString *)labels {
