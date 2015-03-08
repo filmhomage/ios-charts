@@ -1,4 +1,4 @@
-# Charts
+# ios-charts
 
 [![CI Status](http://img.shields.io/travis/egymgmbh/ios-charts.svg?style=flat)](https://travis-ci.org/egymgmbh/ios-charts)
 [![Version](https://img.shields.io/cocoapods/v/Charts.svg?style=flat)](http://cocoadocs.org/docsets/Charts)
